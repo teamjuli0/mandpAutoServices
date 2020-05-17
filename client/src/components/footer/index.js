@@ -1,0 +1,6 @@
+export { default as Footer } from './footer.js'
+export { default as FooterSocialMedia } from './footer-social-media'
+export { default as FooterTopLinks } from './footer-top-links'
+export { default as FooterFindUs } from './footer-find-us'
+export { default as FooterMenu } from './footer-menu'
+export { default as FooterAboutUs } from './footer-about-us'
