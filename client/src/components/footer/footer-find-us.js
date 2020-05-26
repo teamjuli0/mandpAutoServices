@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FooterFindUs = props => (
+const FooterFindUs = (props) => (
   <>
     <div
       className={props.mobileDevice}
@@ -10,14 +10,14 @@ const FooterFindUs = props => (
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              marginBottom: '30px'
+              marginBottom: '30px',
             }
           : {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
               marginBottom: '30px',
-              width: '50vw'
+              width: '50vw',
             }
       }
     >
@@ -25,7 +25,7 @@ const FooterFindUs = props => (
         style={{
           width: '90%',
           color: '#848d95',
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <div
@@ -33,13 +33,13 @@ const FooterFindUs = props => (
             border: '1px solid #616161',
             margin: 'auto',
             marginBottom: '3px',
-            width: '60px'
+            width: '60px',
           }}
         />
         <h1
           style={{
             fontSize: '20px',
-            color: '#bbc0c4'
+            color: '#bbc0c4',
           }}
         >
           Find Us
@@ -49,14 +49,14 @@ const FooterFindUs = props => (
             border: '1px solid #616161',
             margin: 'auto',
             marginBottom: '7px',
-            width: '60px'
+            width: '60px',
           }}
         />
         <h1
           style={{
             fontSize: '16px',
             paddingBottom: '5px',
-            paddingTop: '5px'
+            paddingTop: '5px',
           }}
         >
           Address
@@ -64,24 +64,24 @@ const FooterFindUs = props => (
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '2px'
+            paddingBottom: '2px',
           }}
         >
-          1909 South Vermont Avenue
+          9824 Flair Dr. El Monte CA
         </h1>
         <div
           style={{
             border: '1px solid #616161',
             margin: 'auto',
             marginTop: '30px',
-            width: '60px'
+            width: '60px',
           }}
         />
         <h1
           style={{
             marginTop: '3px',
             fontSize: '20px',
-            color: '#bbc0c4'
+            color: '#bbc0c4',
           }}
         >
           Hours
@@ -91,65 +91,65 @@ const FooterFindUs = props => (
             border: '1px solid #616161',
             margin: 'auto',
             marginBottom: '3px',
-            width: '60px'
+            width: '60px',
           }}
         />
         <h1
           style={{
             fontSize: '16px',
             paddingTop: '10px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Monday: <span>10 AM - 7 PM</span>
+          Monday: <span>8 AM - 5 PM</span>
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Tuesday: <span>Closed</span>
+          Tuesday: <span>8 AM - 5 PM</span>
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Wednesday: <span>10 AM - 7 PM</span>
+          Wednesday: <span>8 AM - 5 PM</span>
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Thursday: <span>10 AM - 7 PM</span>
+          Thursday: <span>8 AM - 5 PM</span>
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Friday: <span>9 AM - 7 PM</span>
+          Friday: <span>8 AM - 5 PM</span>
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Saturday: <span>9 AM - 7 PM</span>
+          Saturday: <span>8 AM - 5 PM</span>
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
-          Sunday: <span>9 AM - 5 PM</span>
+          Sunday: <span>CLOSED</span>
         </h1>{' '}
       </div>
     </div>

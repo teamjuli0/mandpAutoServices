@@ -10,7 +10,7 @@ const MainImage = (props) => (
         position: 'relative',
         backgroundPosition: 'center',
         backgroundImage: `url(${props.background})`,
-        width: '100vw',
+        width: '100%',
         height: '650px',
         align: 'center',
         backgroundSize: 'cover',
@@ -66,7 +66,7 @@ const MainImage = (props) => (
                 fontSize: '25px',
                 padding: '7px 12px 5px 12px',
                 display: 'inline',
-                margin: '0 50px 0 0',
+                margin: '0 35px 0 0',
                 borderRadius: '2px',
 
                 boxShadow: '0 0 10px 0 #b2b2b2',
@@ -90,7 +90,7 @@ const MainImage = (props) => (
                 // margin: '0 50px 0 0',
               }}
             >
-              Directions
+              Location
             </div>
           </div>
         </div>

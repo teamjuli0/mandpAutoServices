@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FooterMenu = props => (
+const FooterMenu = (props) => (
   <>
     <div
       className={props.mobileDevice}
@@ -10,14 +10,14 @@ const FooterMenu = props => (
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              marginBottom: '30px'
+              marginBottom: '30px',
             }
           : {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
               marginBottom: '30px',
-              width: '50vw'
+              width: '50vw',
             }
       }
     >
@@ -25,21 +25,21 @@ const FooterMenu = props => (
         style={{
           width: '90%',
           color: '#848d95',
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <div
           style={{
             border: '1px solid #616161',
             margin: 'auto',
-            width: '50px'
+            width: '50px',
           }}
         />
         <h1
           style={{
             marginTop: '3px',
             fontSize: '20px',
-            color: '#bbc0c4'
+            color: '#bbc0c4',
           }}
         >
           Menu
@@ -49,30 +49,13 @@ const FooterMenu = props => (
             border: '1px solid #616161',
             margin: 'auto',
             marginBottom: '3px',
-            width: '50px'
+            width: '50px',
           }}
         />
         <h1
           style={{
             fontSize: '16px',
-            paddingTop: '10px',
-            paddingBottom: '8px'
-          }}
-        >
-          <a>Gallery</a>
-        </h1>
-        <h1
-          style={{
-            fontSize: '16px',
-            paddingBottom: '8px'
-          }}
-        >
-          <a>Home</a>
-        </h1>
-        <h1
-          style={{
-            fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
           <a>Location</a>
@@ -80,7 +63,26 @@ const FooterMenu = props => (
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
+          }}
+        >
+          <a>
+            Hours
+            <span
+              style={{
+                fontSize: '13px',
+              }}
+            >
+              {' '}
+              &{' '}
+            </span>
+            Services
+          </a>
+        </h1>
+        <h1
+          style={{
+            fontSize: '16px',
+            paddingBottom: '8px',
           }}
         >
           <a>Our Team</a>
@@ -88,15 +90,7 @@ const FooterMenu = props => (
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '8px'
-          }}
-        >
-          <a>Services</a>
-        </h1>
-        <h1
-          style={{
-            fontSize: '16px',
-            paddingBottom: '8px'
+            paddingBottom: '8px',
           }}
         >
           <a>T-Shirts</a>

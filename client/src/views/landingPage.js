@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Navbar } from '../../components/bootstrap'
-import { Footer } from '../../components/footer'
-import { MechanicShop } from '../../images/backgrounds'
-import { MainImage, Schedule } from './components'
+import { Navbar } from '../components/bootstrap'
+import { Footer } from '../components/footer'
+import { MechanicShop } from '../images/backgrounds'
+import { MainImage, Schedule } from './'
 
 class LandingPage extends React.Component {
   render() {
@@ -13,9 +13,8 @@ class LandingPage extends React.Component {
         <div
           className='container-fluid'
           style={{
-            minHeight: '100vh',
-            width: '100vw',
-            padding: 0,
+            width: '100%',
+            padding: '0',
             background: '#e0e0e0',
           }}
         >
@@ -23,7 +22,7 @@ class LandingPage extends React.Component {
           <Schedule />
           <Footer />
         </div>
-        <div
+        <a
           style={{
             position: 'fixed',
             zIndex: '1',
@@ -32,16 +31,19 @@ class LandingPage extends React.Component {
             fontFamily: 'Bebas Neue, cursive',
             backgroundColor: '#326598',
             animationName: 'color',
-            animationDuration: '.75s',
+            animationDuration: '1s',
             animationIterationCount: 'infinite',
             color: 'white',
             fontSize: '32px',
             padding: '8px 12px 5px 12px',
-            borderRadius: '2px',
+            borderRadius: '3px',
+            cursor: 'pointer',
+            textDecoration: 'none',
           }}
+          href='tel:626-522-0251'
         >
           Call Now!
-        </div>
+        </a>
       </>
     )
   }

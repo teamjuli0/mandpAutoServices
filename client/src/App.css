@@ -153,9 +153,52 @@ table {
     background-color: #4080c0;
   }
   50% {
-    background-color: #13455c;
+    background-color: #263942;
   }
   100% {
     background-color: #4080c0;
+  }
+}
+
+.css-selector {
+  background: linear-gradient(309deg, #5c6c72, #bdbdbd);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 76%;
+  }
+  100% {
+    background-position: 0% 25%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 76%;
+  }
+  100% {
+    background-position: 0% 25%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 76%;
+  }
+  100% {
+    background-position: 0% 25%;
   }
 }

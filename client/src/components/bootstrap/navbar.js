@@ -84,27 +84,26 @@ class Navbar extends React.Component {
             </li>
             <li className='nav-item active'>
               <a className='nav-link' href='#'>
-                T-Shirts
-              </a>
-            </li>
-            <li className='nav-item active'>
-              <a className='nav-link' href='#'>
-                Gallery
-              </a>
-            </li>
-            <li className='nav-item active'>
-              <a className='nav-link' href='#'>
+                Hours
+                <span
+                  style={{
+                    fontSize: '16px',
+                    padding: '0 1.5px',
+                  }}
+                >
+                  &
+                </span>
                 Services
               </a>
             </li>
             <li className='nav-item active'>
               <a className='nav-link' href='#'>
-                Our Team
+                Location
               </a>
             </li>
             <li className='nav-item active'>
               <a className='nav-link' href='#'>
-                Location
+                About Us
               </a>
             </li>
           </ul>

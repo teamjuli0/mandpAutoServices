@@ -4,13 +4,13 @@ import {
   FooterSocialMedia,
   FooterFindUs,
   FooterMenu,
-  FooterAboutUs
+  FooterAboutUs,
 } from '../footer'
 import { InstagramLogo, YelpLogo } from '../../images/logos-and-icons'
 
 class Footer extends React.Component {
   state = {
-    isMobile: true
+    isMobile: true,
   }
 
   componentDidMount() {
@@ -30,25 +30,26 @@ class Footer extends React.Component {
           style={{
             color: '#cccccc',
             backgroundColor: '#f4f4f4',
-            margin: 0,
-            fontFamily: 'Bebas Neue, cursive'
+            margin: '0',
+            fontFamily: 'Bebas Neue, cursive',
           }}
         >
           <div
             className='col-sm-12'
             style={{
-              padding: 0,
+              padding: '0',
               boxShadow: '0 0 25px #5b5b5b',
               MozBoxShadow: '0 0 25px #5b5b5b',
               WebkitBoxShadow: '0 0 25px #5b5b5b',
-              backgroundColor: '#4b4c4d'
+              backgroundColor: '#4b4c4d',
             }}
           >
             <div
               className='row'
               style={{
+                width: '100%',
                 maxWidth: '1000px',
-                margin: '0 auto'
+                margin: '0 auto',
               }}
             >
               <FooterTopLinks
@@ -59,17 +60,19 @@ class Footer extends React.Component {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        borderBottom: '2.5px solid #444444'
+                        padding: '0',
+                        borderBottom: '2.5px solid #444444',
                       }
                     : {
                         height: '7vh',
+                        padding: '0',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center'
+                        alignItems: 'center',
                       }
                 }
                 link='/'
-                name='GALLERY'
+                name='home'
               />
               <FooterTopLinks
                 border={
@@ -79,17 +82,29 @@ class Footer extends React.Component {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        borderBottom: '2.5px solid #444444'
+                        borderBottom: '2.5px solid #444444',
                       }
                     : {
                         height: '7vh',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center'
+                        alignItems: 'center',
                       }
                 }
                 link='/'
-                name='SERVICES'
+                name={
+                  <div>
+                    hours
+                    <span
+                      style={{
+                        fontSize: '13px',
+                      }}
+                    >
+                      &
+                    </span>
+                    services
+                  </div>
+                }
               />
               <FooterTopLinks
                 border={
@@ -99,42 +114,44 @@ class Footer extends React.Component {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        borderBottom: '2.5px solid #444444'
+                        borderBottom: '2.5px solid #444444',
                       }
                     : {
                         height: '7vh',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center'
+                        alignItems: 'center',
                       }
                 }
                 link='/'
-                name='OUR TEAM'
+                name='Location'
               />
               <FooterTopLinks
                 border={{
                   height: '7vh',
                   display: 'flex',
                   justifyContent: 'center',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 link='/'
-                name='LOCATION'
+                name='About Us'
               />
             </div>
             <div
               style={{
-                backgroundColor: '#242729'
+                backgroundColor: '#242729',
+                width: '100%',
               }}
             >
               <div
                 className='row'
                 style={{
                   minHeight: '10vh',
+                  width: '100%',
                   maxWidth: '650px',
                   margin: '0 auto',
                   marginBottom: '20px',
-                  paddingTop: '20px'
+                  paddingTop: '20px',
                 }}
               >
                 <FooterSocialMedia
@@ -150,7 +167,7 @@ class Footer extends React.Component {
                   imgStyle={{
                     height: '23px',
                     width: '23px',
-                    marginLeft: '5px'
+                    marginLeft: '5px',
                   }}
                   name='Instagram'
                   font='Pacifico'
@@ -164,7 +181,7 @@ class Footer extends React.Component {
                   imgSource={YelpLogo}
                   imgStyle={{
                     height: '28px',
-                    marginLeft: '15px'
+                    marginLeft: '15px',
                   }}
                 />
               </div>
@@ -172,7 +189,7 @@ class Footer extends React.Component {
                 className='row'
                 style={{
                   margin: '0 auto',
-                  maxWidth: '900px'
+                  maxWidth: '900px',
                 }}
               >
                 <FooterFindUs

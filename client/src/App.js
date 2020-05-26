@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import { LandingPage } from './views/landing-page'
+import { LandingPage } from './views/'
 
 class App extends React.Component {
   render() {
