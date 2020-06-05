@@ -202,3 +202,20 @@ table {
     background-position: 0% 25%;
   }
 }
+
+.leaflet-popup-content {
+  font-weight: bolder;
+  font-family: Bebas Neue;
+  letter-spacing: 2px;
+  font-size: 25px !important;
+  padding-top: 3px;
+  cursor: default;
+}
+
+.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-content-wrapper {
+  max-width: 245px;
+}

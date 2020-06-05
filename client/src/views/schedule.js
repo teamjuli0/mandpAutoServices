@@ -154,6 +154,13 @@ class Schedule extends React.Component {
                       style={{
                         margin: '30px 10px',
                         fontFamily: 'Bebas Neue',
+                        backgroundColor: '#4b5356',
+                        padding: '10px 8px 8px 8px',
+                        borderRadius: '7px',
+                        border: '3px solid #73797c',
+                        boxShadow: '0 0 5px black',
+                        MozBoxShadow: '0 0 5px black',
+                        WebkitBoxShadow: '0 0 5px black',
                       }}
                     >
                       <div
@@ -161,7 +168,6 @@ class Schedule extends React.Component {
                         style={{
                           margin: '0 2px',
                           color: '#edeeef',
-                          // fontWeight: 'bold',
                           fontSize: '26px',
                         }}
                       >
@@ -171,7 +177,6 @@ class Schedule extends React.Component {
                               backgroundColor: '#2d3338',
                               padding: '8px 10px 4px 10px',
                               marginBottom: '8px',
-                              // borderRadius: '4px',
                               boxShadow: '0 0 10px #374044',
                               MozBoxShadow: '0 0 10px #374044',
                               WebkitBoxShadow: '0 0 10px #374044',

@@ -8,9 +8,9 @@ const ScheduleCard = () => (
       margin: 'auto',
       width: '280px',
       fontFamily: 'Bebas Neue, cursive',
-      boxShadow: '0 0 25px #374044',
-      MozBoxShadow: '0 0 25px #374044',
-      WebkitBoxShadow: '0 0 25px #374044',
+      boxShadow: '0 0 15px #374044',
+      MozBoxShadow: '0 0 15px #374044',
+      WebkitBoxShadow: '0 0 15px #374044',
       borderRadius: '3px',
       overflow: 'hidden',
     }}
