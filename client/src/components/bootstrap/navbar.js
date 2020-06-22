@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 import { Icon, MenuIcon } from '../../images/logos-and-icons'
 
@@ -78,12 +78,31 @@ class Navbar extends React.Component {
             }}
           >
             <li className='nav-item active'>
-              <a className='nav-link' href='#'>
+              <Link
+                to='mainImage'
+                smooth={true}
+                duration={500}
+                className='nav-link'
+                style={{
+                  cursor: 'pointer',
+                }}
+              >
                 Home
-              </a>
+              </Link>
+              {/* <a className='nav-link' href='#'>
+                
+              </a> */}
             </li>
             <li className='nav-item active'>
-              <a className='nav-link' href='#'>
+              <Link
+                to='schedule'
+                smooth={true}
+                duration={500}
+                className='nav-link'
+                style={{
+                  cursor: 'pointer',
+                }}
+              >
                 Hours
                 <span
                   style={{
@@ -94,18 +113,35 @@ class Navbar extends React.Component {
                   &
                 </span>
                 Services
-              </a>
+              </Link>
             </li>
             <li className='nav-item active'>
-              <a className='nav-link' href='#'>
+              <Link
+                to='mapid'
+                smooth={true}
+                duration={500}
+                offset={-47}
+                className='nav-link'
+                style={{
+                  cursor: 'pointer',
+                }}
+              >
                 Location
-              </a>
+              </Link>
             </li>
-            <li className='nav-item active'>
-              <a className='nav-link' href='#'>
+            {/* <li className='nav-item active'>
+              <Link
+                to='aboutUs'
+                smooth={true}
+                duration={500}
+                className='nav-link'
+                style={{
+                  cursor: 'pointer',
+                }}
+              >
                 About Us
-              </a>
-            </li>
+              </Link>
+            </li> */}
           </ul>
         </div>
       </nav>

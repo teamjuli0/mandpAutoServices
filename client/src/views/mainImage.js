@@ -4,6 +4,7 @@ const MainImage = (props) => (
   <>
     <div
       className='row'
+      id='mainImage'
       style={{
         margin: 0,
         zIndex: '1',
@@ -24,11 +25,6 @@ const MainImage = (props) => (
           width: '100%',
           color: 'white',
         }}
-        // style={{
-        //   textAlign: 'center',
-        //   color: 'white',
-        //   width: '100%',
-        // }}
       >
         <div
           style={{

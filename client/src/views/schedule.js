@@ -120,6 +120,7 @@ class Schedule extends React.Component {
     return (
       <>
         <div
+          id='schedule'
           className='css-selector'
           style={{
             borderTop: '3px solid #6f7274',

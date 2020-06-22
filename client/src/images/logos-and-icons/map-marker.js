@@ -6,7 +6,7 @@ let MapMarkerIcon = L.icon({
 
   iconSize: [35, 45], // size of the icon
   iconAnchor: [20, 44], // point of the icon which will correspond to marker's location
-  popupAnchor: [-5, -50], // point from which the popup should open relative to the iconAnchor
+  popupAnchor: [-5, -47], // point from which the popup should open relative to the iconAnchor
 })
 
 export default MapMarkerIcon

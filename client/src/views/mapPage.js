@@ -4,7 +4,7 @@ import { MapMarkerIcon } from '../images/logos-and-icons'
 
 class Map extends React.Component {
   componentDidMount() {
-    var popup = L.popup().setContent('Come Visit Us Today!')
+    var popup = L.popup().setContent('Click The Red Marker For Directions!')
 
     var mymap = L.map('mapid').setView([34.07165, -118.05428], 15)
     mymap.scrollWheelZoom.disable()
@@ -27,7 +27,6 @@ class Map extends React.Component {
           'https://www.google.com/maps/place/M%26P+AUTO+SERVICE/@34.0714705,-118.0556085,18z/data=!3m1!4b1!4m5!3m4!1s0x80c2d1bd74c220fd:0x2db195450267c222!8m2!3d34.0714705!4d-118.0545142'
         )
       })
-    // .bindPopup(popup)
   }
 
   render() {
@@ -46,41 +45,3 @@ class Map extends React.Component {
 }
 
 export default Map
-
-// import React from 'react'
-// import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-// import { MapMarkerIcon } from '../images/logos-and-icons'
-
-// class SimpleExample extends React.Component {
-//   state = {
-//     lat: 34.07165,
-//     lng: -118.05428,
-//     zoom: 15,
-//   }
-
-//   render() {
-//     const position = [this.state.lat, this.state.lng]
-//     return (
-//       <Map
-//         center={position}
-//         zoom={this.state.zoom}
-//         style={{
-//           height: '500px',
-//         }}
-//         scrollWheelZoom={false}
-//       >
-//         <TileLayer
-//           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-//           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-//         />
-//         <Marker position={position} icon={MapMarkerIcon}>
-//           <Popup>
-//             A pretty CSS3 popup. <br /> Easily customizable.
-//           </Popup>
-//         </Marker>
-//       </Map>
-//     )
-//   }
-// }
-
-// export default SimpleExample
