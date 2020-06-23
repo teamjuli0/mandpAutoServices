@@ -1,4 +1,6 @@
 import React from 'react'
+import { FooterSocialMedia } from '../footer'
+import { InstagramLogo, YelpLogo } from '../../images/logos-and-icons'
 
 const FooterAboutUs = (props) => (
   <>
@@ -47,6 +49,8 @@ const FooterAboutUs = (props) => (
         <h1
           style={{
             fontSize: '16px',
+            maxWidth: '245px',
+            margin: 'auto',
             paddingBottom: '2px',
           }}
         >

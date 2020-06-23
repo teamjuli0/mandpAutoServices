@@ -32,6 +32,7 @@ const FooterFindUs = (props) => (
           style={{
             border: '1px solid #616161',
             margin: 'auto',
+            marginTop: '20px',
             marginBottom: '3px',
             width: '60px',
           }}
