@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 const MainImage = (props) => (
   <>
@@ -55,8 +56,12 @@ const MainImage = (props) => (
             More!
           </p>
           <div>
-            <div
+            <Link
+              to='schedule'
+              smooth={true}
+              duration={700}
               style={{
+                cursor: 'pointer',
                 backgroundColor: '#f2f2f2',
                 color: 'black',
                 fontSize: '25px',
@@ -64,16 +69,20 @@ const MainImage = (props) => (
                 display: 'inline',
                 margin: '0 35px 0 0',
                 borderRadius: '2px',
-
                 boxShadow: '0 0 10px 0 #b2b2b2',
                 MozBoxShadow: '0 0 10px 0 #b2b2b2',
                 WebkitBoxShadow: '0 0 10px 0 #b2b2b2',
               }}
             >
               Services
-            </div>
-            <div
+            </Link>
+            <Link
+              to='mapid'
+              smooth={true}
+              duration={700}
+              offset={-47}
               style={{
+                cursor: 'pointer',
                 boxShadow: '0 0 10px 0 #b2b2b2',
                 MozBoxShadow: '0 0 10px 0 #b2b2b2',
                 WebkitBoxShadow: '0 0 10px 0 #b2b2b2',
@@ -87,7 +96,7 @@ const MainImage = (props) => (
               }}
             >
               Location
-            </div>
+            </Link>
           </div>
         </div>
       </div>

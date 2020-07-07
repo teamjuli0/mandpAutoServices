@@ -96,7 +96,7 @@ class Navbar extends React.Component {
               <Link
                 to='mainImage'
                 smooth={true}
-                duration={500}
+                duration={700}
                 className='nav-link'
                 style={{
                   cursor: 'pointer',
@@ -104,15 +104,12 @@ class Navbar extends React.Component {
               >
                 Home
               </Link>
-              {/* <a className='nav-link' href='#'>
-                
-              </a> */}
             </li>
             <li className='nav-item active'>
               <Link
                 to='schedule'
                 smooth={true}
-                duration={500}
+                duration={700}
                 className='nav-link'
                 style={{
                   cursor: 'pointer',
@@ -134,7 +131,7 @@ class Navbar extends React.Component {
               <Link
                 to='mapid'
                 smooth={true}
-                duration={500}
+                duration={700}
                 offset={-47}
                 className='nav-link'
                 style={{

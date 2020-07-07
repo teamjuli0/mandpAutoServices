@@ -71,7 +71,7 @@ class Footer extends React.Component {
                         alignItems: 'center',
                       }
                 }
-                link='/'
+                location='mainImage'
                 name='home'
               />
               <FooterTopLinks
@@ -91,7 +91,7 @@ class Footer extends React.Component {
                         alignItems: 'center',
                       }
                 }
-                link='/'
+                location='schedule'
                 name={
                   <div>
                     hours
@@ -123,7 +123,8 @@ class Footer extends React.Component {
                         alignItems: 'center',
                       }
                 }
-                link='/'
+                offset={-47}
+                location='mapid'
                 name='Location'
               />
               <FooterTopLinks
@@ -133,17 +134,18 @@ class Footer extends React.Component {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
-                link='/'
+                location='aboutus'
                 name='About Us'
               />
             </div>
             <div
+              id='aboutus'
               style={{
                 backgroundColor: '#242729',
                 width: '100%',
               }}
             >
-              <div
+              {/* <div
                 className='row'
                 style={{
                   minHeight: '10vh',
@@ -154,37 +156,37 @@ class Footer extends React.Component {
                   paddingTop: '20px',
                 }}
               >
-                <FooterSocialMedia
-                  cc='©'
-                  name='facebook'
-                  font='Lato'
-                  bgcolor='#466093'
-                  bordercolor='#b5bfd3'
-                  textcolor='white'
-                />
-                <FooterSocialMedia
-                  imgSource={InstagramLogo}
-                  imgStyle={{
-                    height: '23px',
-                    width: '23px',
-                    marginLeft: '5px',
-                  }}
-                  name='Instagram'
-                  font='Pacifico'
-                  bgcolor='linear-gradient(45deg, #f09433 0%,#e6683c 40%,#dc2743 60%,#cc2366 80%,#bc1888 100%)'
-                  bordercolor='#f7d1c4'
-                  textcolor='#fcece7'
-                />
-                <FooterSocialMedia
-                  bgcolor='#c31f2a'
-                  bordercolor='#efa7ab'
-                  imgSource={YelpLogo}
-                  imgStyle={{
-                    height: '28px',
-                    marginLeft: '15px',
-                  }}
-                />
-              </div>
+              <FooterSocialMedia
+                cc='©'
+                name='facebook'
+                font='Lato'
+                bgcolor='#466093'
+                bordercolor='#b5bfd3'
+                textcolor='white'
+              />
+              <FooterSocialMedia
+                imgSource={InstagramLogo}
+                imgStyle={{
+                  height: '23px',
+                  width: '23px',
+                  marginLeft: '5px',
+                }}
+                name='Instagram'
+                font='Pacifico'
+                bgcolor='linear-gradient(45deg, #f09433 0%,#e6683c 40%,#dc2743 60%,#cc2366 80%,#bc1888 100%)'
+                bordercolor='#f7d1c4'
+                textcolor='#fcece7'
+              />
+              <FooterSocialMedia
+                bgcolor='#c31f2a'
+                bordercolor='#efa7ab'
+                imgSource={YelpLogo}
+                imgStyle={{
+                  height: '28px',
+                  marginLeft: '15px',
+                }}
+              />
+              </div> */}
               <div
                 className='row'
                 style={{
@@ -192,15 +194,8 @@ class Footer extends React.Component {
                   maxWidth: '900px',
                 }}
               >
-                <FooterFindUs
-                  mobileDevice={this.state.isMobile ? '' : 'col-sm-4'}
-                />
-                <FooterMenu
-                  mobileDevice={this.state.isMobile ? '' : 'col-sm-4'}
-                />
-                <FooterAboutUs
-                  mobileDevice={this.state.isMobile ? '' : 'col-sm-4'}
-                />
+                <FooterFindUs mobileDevice='col-sm-6' />
+                <FooterAboutUs mobileDevice='col-sm-6' />
               </div>
             </div>
           </div>
