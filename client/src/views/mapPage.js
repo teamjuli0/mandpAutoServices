@@ -4,7 +4,9 @@ import { MapMarkerIcon } from '../images/logos-and-icons'
 
 class Map extends React.Component {
   componentDidMount() {
-    var popup = L.popup().setContent('Click The Red Marker For Directions!')
+    var popup = L.popup().setContent(
+      '<p id="popupContent">Click The Red Marker For Directions!</p><div id="popupImg">(626)522-0251</div>'
+    )
 
     var mymap = L.map('mapid').setView([34.07165, -118.05428], 15)
     mymap.scrollWheelZoom.disable()
