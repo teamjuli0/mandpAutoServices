@@ -13,7 +13,7 @@ code {
 }
 
 .scissors-bg {
-  /* background: url('images/backgrounds/schedule-background.jpg'); */
+  background: url('./images/backgrounds/backgroundImg.jpg');
   position: fixed;
   background-size: cover;
   z-index: 0;

@@ -32,39 +32,39 @@ const FooterFindUs = (props) => (
           style={{
             border: '1px solid #616161',
             margin: 'auto',
-            marginBottom: '3px',
-            width: '60px',
+            marginTop: '30px',
+            width: '95px',
           }}
         />
         <h1
           style={{
+            marginTop: '3px',
             fontSize: '20px',
             color: '#bbc0c4',
           }}
         >
-          Find Us
+          Contact Info
         </h1>
         <div
           style={{
             border: '1px solid #616161',
             margin: 'auto',
-            marginBottom: '7px',
-            width: '60px',
+            marginBottom: '3px',
+            width: '95px',
           }}
         />
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '5px',
-            paddingTop: '5px',
+            padding: '5px 0',
           }}
         >
-          Address
+          (626)522-0251
         </h1>
         <h1
           style={{
             fontSize: '16px',
-            paddingBottom: '2px',
+            // paddingBottom: '3px',
           }}
         >
           9824 Flair Dr. El Monte CA
@@ -73,7 +73,7 @@ const FooterFindUs = (props) => (
           style={{
             border: '1px solid #616161',
             margin: 'auto',
-            marginTop: '30px',
+            marginTop: '25px',
             width: '60px',
           }}
         />

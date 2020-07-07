@@ -31,18 +31,6 @@ class Navbar extends React.Component {
           margin: 'auto',
         }}
       >
-        <a className='navbar-brand' href='/'>
-          <img
-            src={Icon}
-            alt=''
-            style={{
-              position: 'relative',
-              top: '7px',
-              left: '20px',
-              paddingBottom: '10px',
-            }}
-          />
-        </a>
         <button
           className='navbar-toggler'
           type='button'
@@ -51,7 +39,10 @@ class Navbar extends React.Component {
           aria-controls='navbarSupportedContent'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          style={{ border: 0 }}
+          style={{
+            border: 0,
+            height: '47px',
+          }}
         >
           <img
             src={MenuIcon}
@@ -60,7 +51,40 @@ class Navbar extends React.Component {
               height: '30px',
             }}
           />
+          <div className='navbar-brand'>
+            <img
+              src={Icon}
+              alt=''
+              style={{
+                position: 'relative',
+                top: '7px',
+                left: '12px',
+                paddingBottom: '10px',
+              }}
+            />
+          </div>
         </button>
+        <div className='navbar-brand'>
+          <Link
+            to='mainImage'
+            smooth={true}
+            duration={700}
+            className='nav-link'
+            style={{
+              cursor: 'pointer',
+            }}
+          >
+            <img
+              src={Icon}
+              alt=''
+              style={{
+                position: 'relative',
+                top: '7px',
+                paddingBottom: '10px',
+              }}
+            />
+          </Link>
+        </div>
 
         <div
           className='collapse navbar-collapse justify-content-end'
@@ -81,7 +105,7 @@ class Navbar extends React.Component {
               <Link
                 to='mainImage'
                 smooth={true}
-                duration={500}
+                duration={700}
                 className='nav-link'
                 style={{
                   cursor: 'pointer',
@@ -89,15 +113,12 @@ class Navbar extends React.Component {
               >
                 Home
               </Link>
-              {/* <a className='nav-link' href='#'>
-                
-              </a> */}
             </li>
             <li className='nav-item active'>
               <Link
                 to='schedule'
                 smooth={true}
-                duration={500}
+                duration={700}
                 className='nav-link'
                 style={{
                   cursor: 'pointer',
@@ -119,7 +140,7 @@ class Navbar extends React.Component {
               <Link
                 to='mapid'
                 smooth={true}
-                duration={500}
+                duration={700}
                 offset={-47}
                 className='nav-link'
                 style={{
@@ -129,18 +150,25 @@ class Navbar extends React.Component {
                 Location
               </Link>
             </li>
+            <div
+              style={{
+                width: '190px',
+              }}
+            ></div>
             {/* <li className='nav-item active'>
-              <Link
-                to='aboutUs'
-                smooth={true}
-                duration={500}
+              <a
+                href='https://www.google.com/maps/place/M%26P+AUTO+SERVICE/@34.0714705,-118.0556085,18z/data=!3m1!4b1!4m5!3m4!1s0x80c2d1bd74c220fd:0x2db195450267c222!8m2!3d34.0714705!4d-118.0545142'
                 className='nav-link'
                 style={{
                   cursor: 'pointer',
+                  backgroundColor: '#991919',
+                  // height: '100%',
+                  paddingBottom: '6px',
+                  margin: '-6px 0 0 10px',
                 }}
               >
-                About Us
-              </Link>
+                Find Us
+              </a>
             </li> */}
           </ul>
         </div>

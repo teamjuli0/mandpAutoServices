@@ -121,15 +121,28 @@ class Schedule extends React.Component {
       <>
         <div
           id='schedule'
-          className='css-selector'
-          style={{
-            borderTop: '3px solid #6f7274',
-            zIndex: 1,
-            position: 'relative',
-            height: '100%',
-            width: '100%',
-            padding: '50px 0',
-          }}
+          // className='css-selector'
+          style={
+            this.state.isTopBg
+              ? {
+                  backgroundColor: 'rgba(0, 0, 0, 0)',
+                  transition: 'background-color 0.25s ease-in',
+                  zIndex: 1,
+                  position: 'relative',
+                  height: '100%',
+                  padding: '50px 0',
+                  width: '100%',
+                }
+              : {
+                  zIndex: 1,
+                  position: 'relative',
+                  height: '100%',
+                  width: '100%',
+                  padding: '50px 0',
+                  backgroundColor: '#c3c1be',
+                  transition: 'background-color 0.25s ease-in',
+                }
+          }
         >
           <div
             className='row'
