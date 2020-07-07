@@ -23,7 +23,9 @@ const LandingPage = (props) => (
         color: 'white',
         fontSize: '25px',
         padding: '12px 12px 10px 12px',
-        // borderRadius: '3px',
+        animationName: 'color-red',
+        animationDuration: '1.5s',
+        animationIterationCount: 'infinite',
         cursor: 'pointer',
         textDecoration: 'none',
       }}

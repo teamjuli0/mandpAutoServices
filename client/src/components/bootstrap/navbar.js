@@ -65,16 +65,25 @@ class Navbar extends React.Component {
           </div>
         </button>
         <div className='navbar-brand'>
-          <img
-            src={Icon}
-            alt=''
+          <Link
+            to='mainImage'
+            smooth={true}
+            duration={700}
+            className='nav-link'
             style={{
-              position: 'relative',
-              top: '7px',
-              left: '20px',
-              paddingBottom: '10px',
+              cursor: 'pointer',
             }}
-          />
+          >
+            <img
+              src={Icon}
+              alt=''
+              style={{
+                position: 'relative',
+                top: '7px',
+                paddingBottom: '10px',
+              }}
+            />
+          </Link>
         </div>
 
         <div

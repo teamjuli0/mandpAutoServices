@@ -4,19 +4,25 @@ import { MapMarkerIcon } from '../images/logos-and-icons'
 
 class Map extends React.Component {
   componentDidMount() {
-    var popup = L.popup().setContent(
-      '<p id="popupContent">Click The Red Marker For Directions!</p><div id="popupImg">(626)522-0251</div>'
+    var popup = L.popup({
+      closeOnClick: false,
+      autoClose: false,
+    }).setContent(
+      '<p id="popupContent">Click The Red Marker For Directions!</p><p id="popupAddress">9824 Flair Dr. El Monte CA</p><div id="popupImg">(626)522-0251</div>'
     )
 
     var mymap = L.map('mapid').setView([34.07165, -118.05428], 15)
     mymap.scrollWheelZoom.disable()
 
     L.tileLayer(
-      'https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+      'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}',
       {
         attribution:
-          'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-        maxZoom: 16,
+          'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains: 'abcd',
+        minZoom: 0,
+        maxZoom: 18,
+        ext: 'png',
       }
     ).addTo(mymap)
 
@@ -26,7 +32,8 @@ class Map extends React.Component {
       .openPopup()
       .on('click', () => {
         window.open(
-          'https://www.google.com/maps/place/M%26P+AUTO+SERVICE/@34.0714705,-118.0556085,18z/data=!3m1!4b1!4m5!3m4!1s0x80c2d1bd74c220fd:0x2db195450267c222!8m2!3d34.0714705!4d-118.0545142'
+          'https://www.google.com/maps/place/M%26P+AUTO+SERVICE/@34.0714705,-118.0556085,18z/data=!3m1!4b1!4m5!3m4!1s0x80c2d1bd74c220fd:0x2db195450267c222!8m2!3d34.0714705!4d-118.0545142',
+          '_self'
         )
       })
   }
