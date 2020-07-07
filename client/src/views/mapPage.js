@@ -11,7 +11,7 @@ class Map extends React.Component {
       '<p id="popupContent">Click The Red Marker For Directions!</p><p id="popupAddress">9824 Flair Dr. El Monte CA</p><div id="popupImg">(626)522-0251</div>'
     )
 
-    var mymap = L.map('mapid').setView([34.07165, -118.05428], 15)
+    var mymap = L.map('mapid').setView([34.07165, -118.05428], 14)
     mymap.scrollWheelZoom.disable()
 
     L.tileLayer(

@@ -5,11 +5,17 @@ import { Icon, MenuIcon } from '../../images/logos-and-icons'
 
 class Navbar extends React.Component {
   state = {
+    isMobile: true,
     isTop: true,
   }
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
+      const isMobile = window.innerWidth < 769
+      if (isMobile !== this.state.isMobile) {
+        this.setState({ isMobile })
+      }
+
       const isTop = window.scrollY < 100
       if (isTop !== this.state.isTop) {
         this.setState({ isTop })
@@ -40,6 +46,8 @@ class Navbar extends React.Component {
           aria-expanded='false'
           aria-label='Toggle navigation'
           style={{
+            position: 'fixed',
+            top: 0,
             border: 0,
             height: '47px',
           }}
@@ -64,27 +72,31 @@ class Navbar extends React.Component {
             />
           </div>
         </button>
-        <div className='navbar-brand'>
-          <Link
-            to='mainImage'
-            smooth={true}
-            duration={700}
-            className='nav-link'
-            style={{
-              cursor: 'pointer',
-            }}
-          >
-            <img
-              src={Icon}
-              alt=''
+        {this.state.isMobile ? (
+          <></>
+        ) : (
+          <div className='navbar-brand'>
+            <Link
+              to='mainImage'
+              smooth={true}
+              duration={700}
+              className='nav-link'
               style={{
-                position: 'relative',
-                top: '7px',
-                paddingBottom: '10px',
+                cursor: 'pointer',
               }}
-            />
-          </Link>
-        </div>
+            >
+              <img
+                src={Icon}
+                alt=''
+                style={{
+                  position: 'relative',
+                  top: '7px',
+                  paddingBottom: '10px',
+                }}
+              />
+            </Link>
+          </div>
+        )}
 
         <div
           className='collapse navbar-collapse justify-content-end'
