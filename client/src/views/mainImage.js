@@ -109,7 +109,7 @@ const MainImage = (props) => (
         height: '1px'
       }}
     /> */}
-    <div className='scissors-bg' />
+    <div className='schedule-bg-img' />
   </>
 )
 

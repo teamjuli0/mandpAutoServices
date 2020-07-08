@@ -1,0 +1,92 @@
+/* 
+--------------------------------------------------------------------------
+footer 
+--------------------------------------------------------------------------
+*/
+
+footer {
+  width: 100%;
+  color: #cccccc;
+  background-color: #f4f4f4;
+  margin: 0 !important;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#aboutus {
+  background-color: #242729;
+  width: 100%;
+  color: #848d95;
+  text-align: center;
+}
+
+#aboutus-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#top-link-div {
+  height: 7vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-link-div-mobile {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-bottom: 2.5px solid #444444;
+}
+
+#ourpromise-div {
+  border-top: 2px solid #616161;
+  border-bottom: 2px solid #616161;
+  margin: 8px auto;
+  width: 120px;
+}
+
+#ourpromise-header {
+  margin: 3px 0 0 0;
+  font-size: 25px;
+  color: #bbc0c4;
+}
+#ourpromise-p-els {
+  font-size: 20px;
+  max-width: 180px;
+  margin: auto;
+  padding-bottom: 2px;
+}
+
+.footer-aboutus-row {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.footer-top-row {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-footer-div {
+  padding: 0;
+  box-shadow: 0 0 25px #5b5b5b;
+  -moz-box-shadow: 0 0 25px #5b5b5b;
+  -webkit-box-shadow: 0 0 25px #5b5b5b;
+  background-color: #4b4c4d;
+}
+
+.footer-links {
+  color: #d6d9db;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 5px;
+}

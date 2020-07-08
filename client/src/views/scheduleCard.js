@@ -6,7 +6,7 @@ const ScheduleCard = () => (
     className='row'
     style={{
       margin: 'auto',
-      width: '280px',
+      maxWidth: '280px',
       fontFamily: 'Bebas Neue, cursive',
       boxShadow: '0 0 15px #374044',
       MozBoxShadow: '0 0 15px #374044',

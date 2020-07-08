@@ -1,0 +1,78 @@
+/* 
+--------------------------------------------------------------------------
+navbar 
+--------------------------------------------------------------------------
+*/
+
+#empty-nav-div {
+  width: 190px;
+}
+
+#navbarSupportedContent {
+  position: relative !important;
+  z-index: -10 !important;
+  margin-top: 0 !important;
+}
+
+.navbar {
+  padding: 0;
+  margin: auto;
+  height: 47px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-scrolled {
+  background-color: #232323;
+  padding-bottom: 10px;
+  transition: background-color 0.25s ease-in;
+  box-shadow: 0 0 25px #070707;
+  -moz-box-shadow: 0 0 25px #070707;
+  -webkit-box-shadow: 0 0 25px #070707;
+}
+
+.nav-unscrolled {
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
+  transition: background-color 0.25s ease-in;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav {
+  position: relative !important;
+  top: 6px;
+  font-family: Bebas Neue, cursive;
+  font-size: 20px;
+}
+
+.navbar-toggler {
+  padding: 0 0 0 7px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-browser {
+  border: 0;
+  position: fixed;
+  top: 2px;
+  left: 0px;
+  height: 47px;
+}
+
+.navbar-toggler-mobile {
+  border: 0;
+  position: fixed;
+  top: 2px;
+  left: 0px;
+  height: 47px;
+}
