@@ -11,10 +11,9 @@ const FooterAboutUs = (props) => (
           <p>Whether it’s an oil change,</p>
           <p>tire rotations, or regular maintenance, we’re just</p>
           <p>around the corner to</p>
-          <p>
-            help! We’ll take care of your tune-ups so you can take care of
-            business. Stop by today!
-          </p>
+          <p>help! We’ll take care of your</p>
+          <p>tune-ups so you can take care </p>
+          <p>of business. Stop by today!</p>
         </div>
       </div>
     </div>

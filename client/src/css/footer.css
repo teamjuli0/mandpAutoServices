@@ -48,20 +48,25 @@ footer {
 #ourpromise-div {
   border-top: 2px solid #616161;
   border-bottom: 2px solid #616161;
-  margin: 8px auto;
-  width: 120px;
+  margin: 10px auto;
+  width: 95px;
 }
 
 #ourpromise-header {
   margin: 3px 0 0 0;
-  font-size: 25px;
+  font-size: 20px;
   color: #bbc0c4;
 }
+
 #ourpromise-p-els {
-  font-size: 20px;
+  font-size: 15px;
   max-width: 180px;
   margin: auto;
   padding-bottom: 22px;
+}
+
+#ourpromise-p-els p {
+  line-height: 23px;
 }
 
 .footer-aboutus-row {
