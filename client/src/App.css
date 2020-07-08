@@ -320,6 +320,17 @@ table {
   }
 }
 
+#navbarSupportedContent {
+  position: relative !important;
+  z-index: -10 !important;
+  /* background-color: white; */
+}
+
+.navbar-nav {
+  position: relative !important;
+  z-index: -10 !important;
+  /* background-color: white; */
+}
 .navbar {
   height: 47px;
 }
