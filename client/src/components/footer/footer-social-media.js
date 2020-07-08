@@ -5,6 +5,7 @@ const FooterSocialMedia = (props) => (
     <div
       style={{
         display: 'flex',
+        height: '7vh',
         justifyContent: 'center',
         alignItems: 'center',
         width: '33.3%',

@@ -5,22 +5,25 @@ import { Icon, MenuIcon } from '../../images/logos-and-icons'
 
 class Navbar extends React.Component {
   state = {
-    isMobile: true,
     isTop: true,
+    isMobile: true,
   }
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const isMobile = window.innerWidth < 769
-      if (isMobile !== this.state.isMobile) {
-        this.setState({ isMobile })
-      }
-
       const isTop = window.scrollY < 100
       if (isTop !== this.state.isTop) {
         this.setState({ isTop })
       }
     })
+  }
+
+  handleTogglerClick() {
+    if (this.state.isMobile) {
+      document.querySelector('.navbar-nav', () => {
+        this.style = {}
+      })
+    }
   }
 
   render() {
@@ -45,12 +48,23 @@ class Navbar extends React.Component {
           aria-controls='navbarSupportedContent'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          style={{
-            position: 'fixed',
-            top: 0,
-            border: 0,
-            height: '47px',
-          }}
+          style={
+            this.className === 'navbar-toggler'
+              ? {
+                  border: 0,
+                  position: 'fixed',
+                  top: '2px',
+                  left: '0px',
+                  height: '47px',
+                }
+              : {
+                  border: 0,
+                  position: 'fixed',
+                  top: '2px',
+                  left: '0px',
+                  height: '47px',
+                }
+          }
         >
           <img
             src={MenuIcon}
@@ -59,57 +73,52 @@ class Navbar extends React.Component {
               height: '30px',
             }}
           />
-          <div className='navbar-brand'>
+          <div
+            className='navbar-brand'
+            style={{
+              padding: 0,
+              margin: 0,
+            }}
+          >
             <img
               src={Icon}
               alt=''
               style={{
-                position: 'relative',
-                top: '7px',
-                left: '12px',
-                paddingBottom: '10px',
+                padding: '3px 0 3px 6px',
               }}
             />
           </div>
         </button>
-        {this.state.isMobile ? (
-          <></>
-        ) : (
-          <div className='navbar-brand'>
-            <Link
-              to='mainImage'
-              smooth={true}
-              duration={700}
-              className='nav-link'
-              style={{
-                cursor: 'pointer',
-              }}
-            >
-              <img
-                src={Icon}
-                alt=''
-                style={{
-                  position: 'relative',
-                  top: '7px',
-                  paddingBottom: '10px',
-                }}
-              />
-            </Link>
-          </div>
-        )}
+        <Link
+          to='mainImage'
+          smooth={true}
+          duration={700}
+          className='nav-link'
+          style={{
+            cursor: 'pointer',
+          }}
+        >
+          <img
+            src={Icon}
+            alt=''
+            style={{
+              position: 'absolute',
+              top: '12px',
+              left: '43px',
+              // paddingBottom: '10px',
+            }}
+          />
+        </Link>
 
         <div
           className='collapse navbar-collapse justify-content-end'
           id='navbarSupportedContent'
-          style={{
-            marginTop: '10px',
-          }}
+          style={{}}
         >
           <ul
             className='navbar-nav'
             style={{
               fontFamily: 'Bebas Neue, cursive',
-              // fontFamily: 'Bebas',
               fontSize: '20px',
             }}
           >
