@@ -1,0 +1,22 @@
+/* 
+--------------------------------------------------------------------------
+schedule view 
+--------------------------------------------------------------------------
+*/
+
+.schedule-bg-img {
+  background: url('../images/backgrounds/backgroundImg.jpg');
+  position: fixed;
+  background-size: cover;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/* 
+  .schedule-unscrolled {
+    background: #e0e0e0;
+    padding: 50px 0;
+  } */

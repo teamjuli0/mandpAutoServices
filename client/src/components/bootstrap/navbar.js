@@ -34,37 +34,19 @@ class Navbar extends React.Component {
             ? 'navbar navbar-expand-md fixed-top navbar-dark nav-unscrolled'
             : 'navbar navbar-expand-md fixed-top navbar-dark nav-scrolled'
         }
-        style={{
-          padding: 0,
-          // maxWidth: '1400px',
-          margin: 'auto',
-        }}
       >
         <button
-          className='navbar-toggler'
+          className={
+            this.className === 'navbar-toggler'
+              ? 'navbar-toggler navbar-toggler-mobile'
+              : 'navbar-toggler navbar-toggler-browser'
+          }
           type='button'
           data-toggle='collapse'
           data-target='#navbarSupportedContent'
           aria-controls='navbarSupportedContent'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          style={
-            this.className === 'navbar-toggler'
-              ? {
-                  border: 0,
-                  position: 'fixed',
-                  top: '2px',
-                  left: '0px',
-                  height: '47px',
-                }
-              : {
-                  border: 0,
-                  position: 'fixed',
-                  top: '2px',
-                  left: '0px',
-                  height: '47px',
-                }
-          }
         >
           <img
             src={MenuIcon}
@@ -73,13 +55,7 @@ class Navbar extends React.Component {
               height: '30px',
             }}
           />
-          <div
-            className='navbar-brand'
-            style={{
-              padding: 0,
-              margin: 0,
-            }}
-          >
+          <div className='navbar-brand'>
             <img
               src={Icon}
               alt=''
@@ -105,7 +81,6 @@ class Navbar extends React.Component {
               position: 'absolute',
               top: '12px',
               left: '43px',
-              // paddingBottom: '10px',
             }}
           />
         </Link>
@@ -113,24 +88,14 @@ class Navbar extends React.Component {
         <div
           className='collapse navbar-collapse justify-content-end'
           id='navbarSupportedContent'
-          style={{}}
         >
-          <ul
-            className='navbar-nav'
-            style={{
-              fontFamily: 'Bebas Neue, cursive',
-              fontSize: '20px',
-            }}
-          >
+          <ul className='navbar-nav'>
             <li className='nav-item active'>
               <Link
                 to='mainImage'
                 smooth={true}
                 duration={700}
                 className='nav-link'
-                style={{
-                  cursor: 'pointer',
-                }}
               >
                 Home
               </Link>
@@ -141,9 +106,6 @@ class Navbar extends React.Component {
                 smooth={true}
                 duration={700}
                 className='nav-link'
-                style={{
-                  cursor: 'pointer',
-                }}
               >
                 Hours
                 <span
@@ -164,33 +126,11 @@ class Navbar extends React.Component {
                 duration={700}
                 offset={-47}
                 className='nav-link'
-                style={{
-                  cursor: 'pointer',
-                }}
               >
                 Location
               </Link>
             </li>
-            <div
-              style={{
-                width: '190px',
-              }}
-            ></div>
-            {/* <li className='nav-item active'>
-              <a
-                href='https://www.google.com/maps/place/M%26P+AUTO+SERVICE/@34.0714705,-118.0556085,18z/data=!3m1!4b1!4m5!3m4!1s0x80c2d1bd74c220fd:0x2db195450267c222!8m2!3d34.0714705!4d-118.0545142'
-                className='nav-link'
-                style={{
-                  cursor: 'pointer',
-                  backgroundColor: '#991919',
-                  // height: '100%',
-                  paddingBottom: '6px',
-                  margin: '-6px 0 0 10px',
-                }}
-              >
-                Find Us
-              </a>
-            </li> */}
+            <div id='empty-nav-div'></div>
           </ul>
         </div>
       </nav>

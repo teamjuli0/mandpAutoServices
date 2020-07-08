@@ -24,51 +24,12 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <div
-          className='row'
-          style={{
-            color: '#cccccc',
-            backgroundColor: '#f4f4f4',
-            margin: '0',
-            fontFamily: 'Bebas Neue, cursive',
-          }}
-        >
-          <div
-            className='col-sm-12'
-            style={{
-              padding: '0',
-              boxShadow: '0 0 25px #5b5b5b',
-              MozBoxShadow: '0 0 25px #5b5b5b',
-              WebkitBoxShadow: '0 0 25px #5b5b5b',
-              backgroundColor: '#4b4c4d',
-            }}
-          >
-            <div
-              className='row'
-              style={{
-                width: '100%',
-                maxWidth: '1000px',
-                margin: '0 auto',
-              }}
-            >
+        <footer className='row'>
+          <div className='col-sm-12 main-footer-div'>
+            <div className='row footer-top-row'>
               <FooterTopLinks
                 border={
-                  this.state.isMobile
-                    ? {
-                        height: '7vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        padding: '0',
-                        borderBottom: '2.5px solid #444444',
-                      }
-                    : {
-                        height: '7vh',
-                        padding: '0',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                      }
+                  this.state.isMobile ? 'top-link-div-mobile' : 'top-link-div'
                 }
                 location='mainImage'
                 name='Home'
@@ -76,20 +37,7 @@ class Footer extends React.Component {
 
               <FooterTopLinks
                 border={
-                  this.state.isMobile
-                    ? {
-                        height: '7vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderBottom: '2.5px solid #444444',
-                      }
-                    : {
-                        height: '7vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                      }
+                  this.state.isMobile ? 'top-link-div-mobile' : 'top-link-div'
                 }
                 location='schedule'
                 name={
@@ -106,28 +54,6 @@ class Footer extends React.Component {
                   </div>
                 }
               />
-              {/* <FooterTopLinks
-                border={
-                  this.state.isMobile
-                    ? {
-                        height: '7vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderBottom: '2.5px solid #444444',
-                      }
-                    : {
-                        height: '7vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                      }
-                }
-                offset={-47}
-                // location='mapid'
-                link='https://www.yelp.com/biz/m-and-p-auto-service-el-monte?osq=m+and+p+auto+services'
-                name='review us on yelp!'
-              /> */}
               <FooterSocialMedia
                 bgcolor='#c31f2a'
                 bordercolor='#efa7ab'
@@ -138,26 +64,14 @@ class Footer extends React.Component {
                 }}
               />
             </div>
-            <div
-              id='aboutus'
-              style={{
-                backgroundColor: '#242729',
-                width: '100%',
-              }}
-            >
-              <div
-                className='row'
-                style={{
-                  margin: '0 auto',
-                  maxWidth: '900px',
-                }}
-              >
+            <div id='aboutus'>
+              <div className='row footer-aboutus-row'>
                 <FooterFindUs mobileDevice='col-sm-6' />
                 <FooterAboutUs mobileDevice='col-sm-6' />
               </div>
             </div>
           </div>
-        </div>
+        </footer>
       </>
     )
   }

@@ -150,7 +150,7 @@ const FooterFindUs = (props) => (
           }}
         >
           Sunday: <span>CLOSED</span>
-        </h1>{' '}
+        </h1>
       </div>
     </div>
   </>
