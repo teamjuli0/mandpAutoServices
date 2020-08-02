@@ -14,31 +14,27 @@ import './css/footer.css'
 import './css/leaflet.css'
 import './css/navbar.css'
 import './css/schedule.css'
-class App extends React.Component {
-  render() {
-    return (
-      <>
-        <Navbar />
+const App = () => (
+  <>
+    <Navbar />
 
-        <Router>
-          <Switch>
-            <Route
-              exact
-              path='/'
-              component={() => (
-                <LandingPage>
-                  <MainImage background={MechanicShop} />
-                  <Schedule />
-                  <MapPage />
-                  <Footer />
-                </LandingPage>
-              )}
-            ></Route>
-          </Switch>
-        </Router>
-      </>
-    )
-  }
-}
+    <Router>
+      <Switch>
+        <Route
+          exact
+          path='/'
+          component={() => (
+            <LandingPage>
+              <MainImage background={MechanicShop} />
+              <Schedule />
+              <MapPage />
+              <Footer />
+            </LandingPage>
+          )}
+        ></Route>
+      </Switch>
+    </Router>
+  </>
+)
 
 export default App

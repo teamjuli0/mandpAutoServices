@@ -1,7 +1,5 @@
 export { default as Icon } from './icon.png'
 export { default as MenuIcon } from './menu-icon.png'
-export { default as IconWords } from './icon-words.png'
-export { default as InstagramLogo } from './instagram-icon.png'
 export { default as YelpLogo } from './yelp-logo.png'
 export { default as MapMarker } from './map-marker.png'
 export { default as MapMarkerIcon } from './map-marker.js'
