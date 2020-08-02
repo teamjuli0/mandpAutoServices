@@ -17,7 +17,6 @@ import './css/schedule.css'
 const App = () => (
   <>
     <Navbar />
-
     <Router>
       <Switch>
         <Route
